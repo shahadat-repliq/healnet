@@ -4,16 +4,16 @@ import Image from 'next/image';
 import React, {useState} from 'react';
 
 const Header = () => {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(true)
     return (
         <div
-            className='w-full max-h-20 flex rounded-2xl bg-[#adadad]/10 p-4 gap-1 items-center justify-between sm:'>
+            className='w-full h-20 flex rounded-2xl bg-[#adadad]/10 p-4 gap-1 items-center justify-between sm:'>
             <div className='relative size-12 flex'>
                 <Image src={'/assets/logo.svg'} width={30} height={30} alt="logo"/>
             </div>
             <div
                 className=' hidden sm:flex w-full  items-center gap-4 justify-end text-primary-color text-sm md:text-base'>
-                <div className='flex gap-2'>
+                <div className='flex gap-4'>
                     <span>Category</span>
                     <span>Consultant</span>
                     <span>Contact</span>
