@@ -1,0 +1,1188 @@
+{
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Dr. Emily Smith",
+      "specialty": "Cardiologist",
+      "experience": [
+        {
+          "position": "Cardiologist",
+          "hospital": "City Heart Center",
+          "start_year": 2008,
+          "end_year": null
+        },
+        {
+          "position": "Internal Medicine Resident",
+          "hospital": "Massachusetts General Hospital",
+          "start_year": 2005,
+          "end_year": 2008
+        }
+      ],
+      "education": [
+        {
+          "degree": "MD",
+          "university": "Harvard Medical School",
+          "year": "2005"
+        },
+        {
+          "degree": "Fellowship in Cardiology",
+          "institution": "Johns Hopkins Hospital",
+          "year": "2010"
+        }
+      ],
+      "certifications": [
+        "American Board of Internal Medicine - Cardiology",
+        "Advanced Cardiac Life Support (ACLS)"
+      ],
+      "availability": {
+        "days": ["Monday", "Wednesday", "Friday"],
+        "hours": "9:00 AM - 5:00 PM",
+        "location": "XYZ Cardiology Clinic, 123 Main Street, City, State"
+      },
+      "reviews": [
+        {
+          "rating": 4.8,
+          "comment": "Dr. Smith is incredibly knowledgeable and caring. She took the time to explain everything clearly and addressed all my concerns."
+        },
+        {
+          "rating": 4.5,
+          "comment": "I highly recommend Dr. Smith. She's helped me manage my heart condition effectively for years."
+        }
+      ],
+      "suggested_doctors": [
+        {
+          "id": 2,
+          "name": "Dr. John Doe",
+          "specialty": "Cardiologist",
+          "experience": "12 years",
+          "availability": {
+            "days": ["Tuesday", "Thursday"],
+            "hours": "10:00 AM - 6:00 PM",
+            "location": "ABC Cardiology Clinic, 456 Elm Street, City, State"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Dr. Sarah Johnson",
+          "specialty": "Cardiologist",
+          "experience": "10 years",
+          "availability": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "hours": "8:00 AM - 4:00 PM",
+            "location": "QRS Cardiology Clinic, 789 Oak Street, City, State"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dr. John Doe",
+      "specialty": "Pediatrician",
+      "experience": [
+        {
+          "position": "Pediatrician",
+          "hospital": "Children's Hospital",
+          "start_year": 2010,
+          "end_year": null
+        },
+        {
+          "position": "Pediatric Resident",
+          "hospital": "St. Mary's Hospital",
+          "start_year": 2007,
+          "end_year": 2010
+        }
+      ],
+      "education": [
+        {
+          "degree": "MD",
+          "university": "University of California, San Francisco",
+          "year": "2007"
+        },
+        {
+          "degree": "Pediatrics Residency",
+          "institution": "Stanford University Medical Center",
+          "year": "2010"
+        }
+      ],
+      "certifications": [
+        "American Board of Pediatrics",
+        "Pediatric Advanced Life Support (PALS)"
+      ],
+      "availability": {
+        "days": ["Monday", "Wednesday", "Friday"],
+        "hours": "8:00 AM - 4:00 PM",
+        "location": "XYZ Pediatrics Clinic, 123 Elm Street, City, State"
+      },
+      "reviews": [
+        {
+          "rating": 4.9,
+          "comment": "Dr. Doe is fantastic with kids. He's patient, understanding, and always makes my child feel comfortable during visits."
+        },
+        {
+          "rating": 4.7,
+          "comment": "I've been taking my children to Dr. Doe for years, and I couldn't be happier with the care they receive."
+        }
+      ],
+      "suggested_doctors": [
+        {
+          "id": 4,
+          "name": "Dr. Jane Smith",
+          "specialty": "Pediatrician",
+          "experience": "8 years",
+          "availability": {
+            "days": ["Tuesday", "Thursday"],
+            "hours": "9:00 AM - 5:00 PM",
+            "location": "ABC Pediatrics Clinic, 456 Oak Street, City, State"
+          }
+        },
+        {
+          "id": 5,
+          "name": "Dr. Michael Johnson",
+          "specialty": "Pediatrician",
+          "experience": "6 years",
+          "availability": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "hours": "10:00 AM - 6:00 PM",
+            "location": "QRS Pediatrics Clinic, 789 Maple Street, City, State"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dr. Sarah Adams",
+      "specialty": "Oncologist",
+      "experience": [
+        {
+          "position": "Oncologist",
+          "hospital": "City Cancer Center",
+          "start_year": 2012,
+          "end_year": null
+        },
+        {
+          "position": "Oncology Fellow",
+          "hospital": "Memorial Sloan Kettering Cancer Center",
+          "start_year": 2009,
+          "end_year": 2012
+        }
+      ],
+      "education": [
+        {
+          "degree": "MD",
+          "university": "Yale School of Medicine",
+          "year": "2009"
+        },
+        {
+          "degree": "Oncology Fellowship",
+          "institution": "Memorial Sloan Kettering Cancer Center",
+          "year": "2012"
+        }
+      ],
+      "certifications": [
+        "American Board of Internal Medicine - Oncology",
+        "Advanced Cardiovascular Life Support (ACLS)"
+      ],
+      "availability": {
+        "days": ["Tuesday", "Thursday", "Saturday"],
+        "hours": "9:00 AM - 5:00 PM",
+        "location": "XYZ Oncology Clinic, 123 Oak Street, City, State"
+      },
+      "reviews": [
+        {
+          "rating": 4.6,
+          "comment": "Dr. Adams is compassionate and knowledgeable. She explained my treatment options thoroughly and supported me through every step."
+        },
+        {
+          "rating": 4.4,
+          "comment": "I'm grateful for Dr. Adams' expertise and care during my cancer treatment journey."
+        }
+      ],
+      "suggested_doctors": [
+        {
+          "id": 6,
+          "name": "Dr. James Brown",
+          "specialty": "Oncologist",
+          "experience": "10 years",
+          "availability": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "hours": "10:00 AM - 6:00 PM",
+            "location": "ABC Oncology Clinic, 456 Elm Street, City, State"
+          }
+        },
+        {
+          "id": 7,
+          "name": "Dr. Lisa Miller",
+          "specialty": "Oncologist",
+          "experience": "8 years",
+          "availability": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "hours": "8:00 AM - 4:00 PM",
+            "location": "QRS Oncology Clinic, 789 Maple Street, City, State"
+          }
+        }
+      ]
+    },
+	{
+      "id": 4,
+      "name": "Dr. Michael Johnson",
+      "specialty": "Orthopedic Surgeon",
+      "experience": [
+        {
+          "position": "Orthopedic Surgeon",
+          "hospital": "City Orthopedic Hospital",
+          "start_year": 2010,
+          "end_year": null
+        },
+        {
+          "position": "Orthopedic Surgery Resident",
+          "hospital": "Mayo Clinic",
+          "start_year": 2007,
+          "end_year": 2010
+        }
+      ],
+      "education": [
+        {
+          "degree": "MD",
+          "university": "Johns Hopkins University School of Medicine",
+          "year": "2007"
+        },
+        {
+          "degree": "Orthopedic Surgery Residency",
+          "institution": "Mayo Clinic",
+          "year": "2010"
+        }
+      ],
+      "certifications": [
+        "American Board of Orthopedic Surgery",
+        "Basic Life Support (BLS)"
+      ],
+      "availability": {
+        "days": ["Tuesday", "Thursday", "Saturday"],
+        "hours": "9:00 AM - 5:00 PM",
+        "location": "XYZ Orthopedic Clinic, 123 Oak Street, City, State"
+      },
+      "reviews": [
+        {
+          "rating": 4.7,
+          "comment": "Dr. Johnson performed my knee surgery flawlessly. I'm grateful for his expertise and care throughout the process."
+        },
+        {
+          "rating": 4.6,
+          "comment": "I've had multiple surgeries with Dr. Johnson, and he's always provided excellent care. Highly recommended!"
+        }
+      ],
+      "suggested_doctors": [
+        {
+          "id": 8,
+          "name": "Dr. Sarah Lee",
+          "specialty": "Orthopedic Surgeon",
+          "experience": "9 years",
+          "availability": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "hours": "10:00 AM - 6:00 PM",
+            "location": "ABC Orthopedic Clinic, 456 Elm Street, City, State"
+          }
+        },
+        {
+          "id": 9,
+          "name": "Dr. David Brown",
+          "specialty": "Orthopedic Surgeon",
+          "experience": "7 years",
+          "availability": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "hours": "8:00 AM - 4:00 PM",
+            "location": "QRS Orthopedic Clinic, 789 Maple Street, City, State"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Dr. Rachel Thompson",
+      "specialty": "Neurologist",
+      "experience": [
+        {
+          "position": "Neurologist",
+          "hospital": "City Neurology Clinic",
+          "start_year": 2012,
+          "end_year": null
+        },
+        {
+          "position": "Neurology Resident",
+          "hospital": "Stanford Health Care",
+          "start_year": 2009,
+          "end_year": 2012
+        }
+      ],
+      "education": [
+        {
+          "degree": "MD",
+          "university": "Columbia University Vagelos College of Physicians and Surgeons",
+          "year": "2009"
+        },
+        {
+          "degree": "Neurology Residency",
+          "institution": "Stanford Health Care",
+          "year": "2012"
+        }
+      ],
+      "certifications": [
+        "American Board of Psychiatry and Neurology - Neurology",
+        "Advanced Cardiovascular Life Support (ACLS)"
+      ],
+      "availability": {
+        "days": ["Monday", "Wednesday", "Friday"],
+        "hours": "9:00 AM - 5:00 PM",
+        "location": "XYZ Neurology Clinic, 123 Main Street, City, State"
+      },
+      "reviews": [
+        {
+          "rating": 4.9,
+          "comment": "Dr. Thompson is an exceptional neurologist. She listens attentively and provides thorough explanations."
+        },
+        {
+          "rating": 4.7,
+          "comment": "I'm impressed with Dr. Thompson's expertise and compassionate care. Highly recommended for neurological issues."
+        }
+      ],
+      "suggested_doctors": [
+        {
+          "id": 10,
+          "name": "Dr. Michael Davis",
+          "specialty": "Neurologist",
+          "experience": "11 years",
+          "availability": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "hours": "10:00 AM - 6:00 PM",
+            "location": "ABC Neurology Clinic, 456 Elm Street, City, State"
+          }
+        },
+        {
+          "id": 11,
+          "name": "Dr. Elizabeth Wilson",
+          "specialty": "Neurologist",
+          "experience": "8 years",
+          "availability": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "hours": "8:00 AM - 4:00 PM",
+            "location": "QRS Neurology Clinic, 789 Oak Street, City, State"
+          }
+        }
+      ]
+    },
+	{
+      "id": 6,
+      "name": "Dr. Daniel Rodriguez",
+      "specialty": "Dermatologist",
+      "experience": [
+        {
+          "position": "Dermatologist",
+          "hospital": "City Dermatology Clinic",
+          "start_year": 2011,
+          "end_year": null
+        },
+        {
+          "position": "Dermatology Resident",
+          "hospital": "University of California, San Francisco",
+          "start_year": 2008,
+          "end_year": 2011
+        }
+      ],
+      "education": [
+        {
+          "degree": "MD",
+          "university": "University of California, San Francisco",
+          "year": "2008"
+        },
+        {
+          "degree": "Dermatology Residency",
+          "institution": "University of California, San Francisco",
+          "year": "2011"
+        }
+      ],
+      "certifications": [
+        "American Board of Dermatology",
+        "Basic Life Support (BLS)"
+      ],
+      "availability": {
+        "days": ["Monday", "Wednesday", "Friday"],
+        "hours": "9:00 AM - 5:00 PM",
+        "location": "XYZ Dermatology Clinic, 123 Main Street, City, State"
+      },
+      "reviews": [
+        {
+          "rating": 4.8,
+          "comment": "Dr. Rodriguez is an excellent dermatologist. He's thorough, knowledgeable, and genuinely cares about his patients."
+        },
+        {
+          "rating": 4.6,
+          "comment": "I've been seeing Dr. Rodriguez for years, and he's always provided top-notch care for my skin issues."
+        }
+      ],
+      "suggested_doctors": [
+        {
+          "id": 12,
+          "name": "Dr. Jennifer Nguyen",
+          "specialty": "Dermatologist",
+          "experience": "9 years",
+          "availability": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "hours": "10:00 AM - 6:00 PM",
+            "location": "ABC Dermatology Clinic, 456 Elm Street, City, State"
+          }
+        },
+        {
+          "id": 13,
+          "name": "Dr. Maria Garcia",
+          "specialty": "Dermatologist",
+          "experience": "7 years",
+          "availability": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "hours": "8:00 AM - 4:00 PM",
+            "location": "QRS Dermatology Clinic, 789 Oak Street, City, State"
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Dr. Christopher Lee",
+      "specialty": "Gastroenterologist",
+      "experience": [
+        {
+          "position": "Gastroenterologist",
+          "hospital": "City Gastrointestinal Clinic",
+          "start_year": 2013,
+          "end_year": null
+        },
+        {
+          "position": "Gastroenterology Fellow",
+          "hospital": "Johns Hopkins Hospital",
+          "start_year": 2010,
+          "end_year": 2013
+        }
+      ],
+      "education": [
+        {
+          "degree": "MD",
+          "university": "Johns Hopkins University School of Medicine",
+          "year": "2010"
+        },
+        {
+          "degree": "Gastroenterology Fellowship",
+          "institution": "Johns Hopkins Hospital",
+          "year": "2013"
+        }
+      ],
+      "certifications": [
+        "American Board of Internal Medicine - Gastroenterology",
+        "Basic Life Support (BLS)"
+      ],
+      "availability": {
+        "days": ["Monday", "Wednesday", "Friday"],
+        "hours": "9:00 AM - 5:00 PM",
+        "location": "XYZ Gastrointestinal Clinic, 123 Main Street, City, State"
+      },
+      "reviews": [
+        {
+          "rating": 4.7,
+          "comment": "Dr. Lee is an exceptional gastroenterologist. He's caring, knowledgeable, and goes above and beyond for his patients."
+        },
+        {
+          "rating": 4.5,
+          "comment": "I've had several procedures done by Dr. Lee, and I've always felt confident in his expertise. Highly recommend!"
+        }
+      ],
+      "suggested_doctors": [
+        {
+          "id": 14,
+          "name": "Dr. Jessica Taylor",
+          "specialty": "Gastroenterologist",
+          "experience": "8 years",
+          "availability": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "hours": "10:00 AM - 6:00 PM",
+            "location": "ABC Gastrointestinal Clinic, 456 Elm Street, City, State"
+          }
+        },
+        {
+          "id": 15,
+          "name": "Dr. Andrew Wilson",
+          "specialty": "Gastroenterologist",
+          "experience": "6 years",
+          "availability": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "hours": "8:00 AM - 4:00 PM",
+            "location": "QRS Gastrointestinal Clinic, 789 Oak Street, City, State"
+          }
+	}
+	]
+      },
+	{
+      "id": 8,
+      "name": "Dr. Stephanie Wilson",
+      "specialty": "Obstetrician/Gynecologist",
+      "experience": [
+        {
+          "position": "Obstetrician/Gynecologist",
+          "hospital": "City Women's Clinic",
+          "start_year": 2014,
+          "end_year": null
+        },
+        {
+          "position": "Obstetrics and Gynecology Resident",
+          "hospital": "Mount Sinai Hospital",
+          "start_year": 2011,
+          "end_year": 2014
+        }
+      ],
+      "education": [
+        {
+          "degree": "MD",
+          "university": "Columbia University Vagelos College of Physicians and Surgeons",
+          "year": "2011"
+        },
+        {
+          "degree": "Obstetrics and Gynecology Residency",
+          "institution": "Mount Sinai Hospital",
+          "year": "2014"
+        }
+      ],
+      "certifications": [
+        "American Board of Obstetrics and Gynecology",
+        "Basic Life Support (BLS)"
+      ],
+      "availability": {
+        "days": ["Tuesday", "Thursday", "Saturday"],
+        "hours": "9:00 AM - 5:00 PM",
+        "location": "XYZ Women's Clinic, 123 Main Street, City, State"
+      },
+      "reviews": [
+        {
+          "rating": 4.9,
+          "comment": "Dr. Wilson is an amazing OB/GYN. She's knowledgeable, compassionate, and always puts her patients' needs first."
+        },
+        {
+          "rating": 4.7,
+          "comment": "I've had multiple appointments with Dr. Wilson, and she's consistently provided excellent care. Highly recommend!"
+        }
+      ],
+      "suggested_doctors": [
+        {
+          "id": 16,
+          "name": "Dr. Samantha Brown",
+          "specialty": "Obstetrician/Gynecologist",
+          "experience": "9 years",
+          "availability": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "hours": "10:00 AM - 6:00 PM",
+            "location": "ABC Women's Clinic, 456 Elm Street, City, State"
+          }
+        },
+        {
+          "id": 17,
+          "name": "Dr. Daniel Smith",
+          "specialty": "Obstetrician/Gynecologist",
+          "experience": "7 years",
+          "availability": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "hours": "8:00 AM - 4:00 PM",
+            "location": "QRS Women's Clinic, 789 Oak Street, City, State"
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Dr. Jessica Martinez",
+      "specialty": "Psychiatrist",
+      "experience": [
+        {
+          "position": "Psychiatrist",
+          "hospital": "City Psychiatry Clinic",
+          "start_year": 2015,
+          "end_year": null
+        },
+        {
+          "position": "Psychiatry Resident",
+          "hospital": "University of California, Los Angeles",
+          "start_year": 2012,
+          "end_year": 2015
+        }
+      ],
+      "education": [
+        {
+          "degree": "MD",
+          "university": "University of California, Los Angeles David Geffen School of Medicine",
+          "year": "2012"
+        },
+        {
+          "degree": "Psychiatry Residency",
+          "institution": "University of California, Los Angeles",
+          "year": "2015"
+        }
+      ],
+      "certifications": [
+        "American Board of Psychiatry and Neurology - Psychiatry",
+        "Basic Life Support (BLS)"
+      ],
+      "availability": {
+        "days": ["Monday", "Wednesday", "Friday"],
+        "hours": "9:00 AM - 5:00 PM",
+        "location": "XYZ Psychiatry Clinic, 123 Main Street, City, State"
+      },
+      "reviews": [
+        {
+          "rating": 4.8,
+          "comment": "Dr. Martinez is a fantastic psychiatrist. She's attentive, empathetic, and has helped me immensely with my mental health."
+        },
+        {
+          "rating": 4.6,
+          "comment": "I'm grateful for Dr. Martinez's expertise and support during my therapy sessions. Highly recommend her!"
+        }
+      ],
+      "suggested_doctors": [
+        {
+          "id": 18,
+          "name": "Dr. Kevin Johnson",
+          "specialty": "Psychiatrist",
+          "experience": "8 years",
+          "availability": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "hours": "10:00 AM - 6:00 PM",
+            "location": "ABC Psychiatry Clinic, 456 Elm Street, City, State"
+          }
+        },
+        {
+          "id": 19,
+          "name": "Dr. Megan Anderson",
+          "specialty": "Psychiatrist",
+          "experience": "6 years",
+          "availability": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "hours": "8:00 AM - 4:00 PM",
+            "location": "QRS Psychiatry Clinic, 789 Oak Street, City, State"
+          }
+        }
+      ]
+    },
+	{
+      "id": 10,
+      "name": "Dr. William Thompson",
+      "specialty": "Urologist",
+      "experience": [
+        {
+          "position": "Urologist",
+          "hospital": "City Urology Clinic",
+          "start_year": 2016,
+          "end_year": null
+        },
+        {
+          "position": "Urology Resident",
+          "hospital": "University of Michigan Hospitals",
+          "start_year": 2013,
+          "end_year": 2016
+        }
+      ],
+      "education": [
+        {
+          "degree": "MD",
+          "university": "University of Michigan Medical School",
+          "year": "2013"
+        },
+        {
+          "degree": "Urology Residency",
+          "institution": "University of Michigan Hospitals",
+          "year": "2016"
+        }
+      ],
+      "certifications": [
+        "American Board of Urology",
+        "Basic Life Support (BLS)"
+      ],
+      "availability": {
+        "days": ["Tuesday", "Thursday", "Saturday"],
+        "hours": "9:00 AM - 5:00 PM",
+        "location": "XYZ Urology Clinic, 123 Main Street, City, State"
+      },
+      "reviews": [
+        {
+          "rating": 4.7,
+          "comment": "Dr. Thompson is an excellent urologist. He's thorough, attentive, and has a great bedside manner."
+        },
+        {
+          "rating": 4.5,
+          "comment": "I've had a positive experience with Dr. Thompson. He's helped me manage my urological issues effectively."
+        }
+      ],
+      "suggested_doctors": [
+        {
+          "id": 20,
+          "name": "Dr. Laura Wilson",
+          "specialty": "Urologist",
+          "experience": "9 years",
+          "availability": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "hours": "10:00 AM - 6:00 PM",
+            "location": "ABC Urology Clinic, 456 Elm Street, City, State"
+          }
+        },
+        {
+          "id": 21,
+          "name": "Dr. Christopher Brown",
+          "specialty": "Urologist",
+          "experience": "7 years",
+          "availability": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "hours": "8:00 AM - 4:00 PM",
+            "location": "QRS Urology Clinic, 789 Oak Street, City, State"
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Dr. Kimberly Harris",
+      "specialty": "Ophthalmologist",
+      "experience": [
+        {
+          "position": "Ophthalmologist",
+          "hospital": "City Eye Care Clinic",
+          "start_year": 2017,
+          "end_year": null
+        },
+        {
+          "position": "Ophthalmology Resident",
+          "hospital": "Wills Eye Hospital",
+          "start_year": 2014,
+          "end_year": 2017
+        }
+      ],
+      "education": [
+        {
+          "degree": "MD",
+          "university": "Perelman School of Medicine at the University of Pennsylvania",
+          "year": "2014"
+        },
+        {
+          "degree": "Ophthalmology Residency",
+          "institution": "Wills Eye Hospital",
+          "year": "2017"
+        }
+      ],
+      "certifications": [
+        "American Board of Ophthalmology",
+        "Basic Life Support (BLS)"
+      ],
+      "availability": {
+        "days": ["Monday", "Wednesday", "Friday"],
+        "hours": "9:00 AM - 5:00 PM",
+        "location": "XYZ Eye Care Clinic, 123 Main Street, City, State"
+      },
+      "reviews": [
+        {
+          "rating": 4.8,
+          "comment": "Dr. Harris is an exceptional ophthalmologist. She's skilled, professional, and genuinely cares about her patients' vision health."
+        },
+        {
+          "rating": 4.6,
+          "comment": "I've been seeing Dr. Harris for years, and she's always provided excellent eye care. Highly recommend her!"
+        }
+      ],
+      "suggested_doctors": [
+        {
+          "id": 22,
+          "name": "Dr. Matthew Rodriguez",
+          "specialty": "Ophthalmologist",
+          "experience": "8 years",
+          "availability": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "hours": "10:00 AM - 6:00 PM",
+            "location": "ABC Eye Care Clinic, 456 Elm Street, City, State"
+          }
+        },
+        {
+          "id": 23,
+          "name": "Dr. Jennifer Baker",
+          "specialty": "Ophthalmologist",
+          "experience": "6 years",
+          "availability": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "hours": "8:00 AM - 4:00 PM",
+            "location": "QRS Eye Care Clinic, 789 Oak Street, City, State"
+          }
+        }
+      ]
+    },
+	    {
+      "id": 12,
+      "name": "Dr. Benjamin Cooper",
+      "specialty": "Allergist/Immunologist",
+      "experience": [
+        {
+          "position": "Allergist/Immunologist",
+          "hospital": "City Allergy and Immunology Clinic",
+          "start_year": 2018,
+          "end_year": null
+        },
+        {
+          "position": "Allergy and Immunology Fellow",
+          "hospital": "Brigham and Women's Hospital",
+          "start_year": 2015,
+          "end_year": 2018
+        }
+      ],
+      "education": [
+        {
+          "degree": "MD",
+          "university": "Harvard Medical School",
+          "year": "2015"
+        },
+        {
+          "degree": "Allergy and Immunology Fellowship",
+          "institution": "Brigham and Women's Hospital",
+          "year": "2018"
+        }
+      ],
+      "certifications": [
+        "American Board of Allergy and Immunology",
+        "Basic Life Support (BLS)"
+      ],
+      "availability": {
+        "days": ["Monday", "Wednesday", "Friday"],
+        "hours": "9:00 AM - 5:00 PM",
+        "location": "XYZ Allergy and Immunology Clinic, 123 Main Street, City, State"
+      },
+      "reviews": [
+        {
+          "rating": 4.9,
+          "comment": "Dr. Cooper is an excellent allergist/immunologist. He's thorough, compassionate, and has greatly improved my quality of life."
+        },
+        {
+          "rating": 4.7,
+          "comment": "I highly recommend Dr. Cooper for allergy and immunology care. He's helped me manage my allergies effectively."
+        }
+      ],
+      "suggested_doctors": [
+        {
+          "id": 24,
+          "name": "Dr. Emily Baker",
+          "specialty": "Allergist/Immunologist",
+          "experience": "9 years",
+          "availability": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "hours": "10:00 AM - 6:00 PM",
+            "location": "ABC Allergy and Immunology Clinic, 456 Elm Street, City, State"
+          }
+        },
+        {
+          "id": 25,
+          "name": "Dr. Daniel Carter",
+          "specialty": "Allergist/Immunologist",
+          "experience": "7 years",
+          "availability": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "hours": "8:00 AM - 4:00 PM",
+            "location": "QRS Allergy and Immunology Clinic, 789 Oak Street, City, State"
+          }
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Dr. Laura Adams",
+      "specialty": "Rheumatologist",
+      "experience": [
+        {
+          "position": "Rheumatologist",
+          "hospital": "City Rheumatology Clinic",
+          "start_year": 2019,
+          "end_year": null
+        },
+        {
+          "position": "Rheumatology Fellow",
+          "hospital": "Hospital for Special Surgery",
+          "start_year": 2016,
+          "end_year": 2019
+        }
+      ],
+      "education": [
+        {
+          "degree": "MD",
+          "university": "Columbia University Vagelos College of Physicians and Surgeons",
+          "year": "2016"
+        },
+        {
+          "degree": "Rheumatology Fellowship",
+          "institution": "Hospital for Special Surgery",
+          "year": "2019"
+        }
+      ],
+      "certifications": [
+        "American Board of Internal Medicine - Rheumatology",
+        "Basic Life Support (BLS)"
+      ],
+      "availability": {
+        "days": ["Monday", "Wednesday", "Friday"],
+        "hours": "9:00 AM - 5:00 PM",
+        "location": "XYZ Rheumatology Clinic, 123 Main Street, City, State"
+      },
+      "reviews": [
+        {
+          "rating": 4.8,
+          "comment": "Dr. Adams is an exceptional rheumatologist. She's knowledgeable, attentive, and has greatly helped me manage my condition."
+        },
+        {
+          "rating": 4.6,
+          "comment": "I'm grateful for Dr. Adams' expertise and care. She's been instrumental in improving my quality of life with rheumatoid arthritis."
+        }
+      ],
+      "suggested_doctors": [
+        {
+          "id": 26,
+          "name": "Dr. Michael Davis",
+          "specialty": "Rheumatologist",
+          "experience": "8 years",
+          "availability": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "hours": "10:00 AM - 6:00 PM",
+            "location": "ABC Rheumatology Clinic, 456 Elm Street, City, State"
+          }
+        },
+        {
+          "id": 27,
+          "name": "Dr. Jennifer Wilson",
+          "specialty": "Rheumatologist",
+          "experience": "6 years",
+          "availability": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "hours": "8:00 AM - 4:00 PM",
+            "location": "QRS Rheumatology Clinic, 789 Oak Street, City, State"
+          }
+        }
+      ]
+    },
+	    {
+      "id": 14,
+      "name": "Dr. Sophia Clark",
+      "specialty": "Pediatrician",
+      "experience": [
+        {
+          "position": "Pediatrician",
+          "hospital": "City Pediatrics Clinic",
+          "start_year": 2020,
+          "end_year": null
+        },
+        {
+          "position": "Pediatrics Resident",
+          "hospital": "Children's Hospital of Philadelphia",
+          "start_year": 2017,
+          "end_year": 2020
+        }
+      ],
+      "education": [
+        {
+          "degree": "MD",
+          "university": "Perelman School of Medicine at the University of Pennsylvania",
+          "year": "2017"
+        },
+        {
+          "degree": "Pediatrics Residency",
+          "institution": "Children's Hospital of Philadelphia",
+          "year": "2020"
+        }
+      ],
+      "certifications": [
+        "American Board of Pediatrics",
+        "Basic Life Support (BLS)"
+      ],
+      "availability": {
+        "days": ["Monday", "Wednesday", "Friday"],
+        "hours": "9:00 AM - 5:00 PM",
+        "location": "XYZ Pediatrics Clinic, 123 Main Street, City, State"
+      },
+      "reviews": [
+        {
+          "rating": 4.9,
+          "comment": "Dr. Clark is an amazing pediatrician. She's caring, knowledgeable, and has a great rapport with children."
+        },
+        {
+          "rating": 4.8,
+          "comment": "I trust Dr. Clark with my children's health completely. She's been wonderful in managing their care."
+        }
+      ],
+      "suggested_doctors": [
+        {
+          "id": 28,
+          "name": "Dr. Ethan Moore",
+          "specialty": "Pediatrician",
+          "experience": "9 years",
+          "availability": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "hours": "10:00 AM - 6:00 PM",
+            "location": "ABC Pediatrics Clinic, 456 Elm Street, City, State"
+          }
+        },
+        {
+          "id": 29,
+          "name": "Dr. Olivia Garcia",
+          "specialty": "Pediatrician",
+          "experience": "7 years",
+          "availability": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "hours": "8:00 AM - 4:00 PM",
+            "location": "QRS Pediatrics Clinic, 789 Oak Street, City, State"
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Dr. Ryan Cooper",
+      "specialty": "Endocrinologist",
+      "experience": [
+        {
+          "position": "Endocrinologist",
+          "hospital": "City Endocrinology Clinic",
+          "start_year": 2021,
+          "end_year": null
+        },
+        {
+          "position": "Endocrinology Fellow",
+          "hospital": "Mayo Clinic",
+          "start_year": 2018,
+          "end_year": 2021
+        }
+      ],
+      "education": [
+        {
+          "degree": "MD",
+          "university": "Mayo Clinic Alix School of Medicine",
+          "year": "2018"
+        },
+        {
+          "degree": "Endocrinology Fellowship",
+          "institution": "Mayo Clinic",
+          "year": "2021"
+        }
+      ],
+      "certifications": [
+        "American Board of Internal Medicine - Endocrinology",
+        "Basic Life Support (BLS)"
+      ],
+      "availability": {
+        "days": ["Tuesday", "Thursday", "Saturday"],
+        "hours": "9:00 AM - 5:00 PM",
+        "location": "XYZ Endocrinology Clinic, 123 Main Street, City, State"
+      },
+      "reviews": [
+        {
+          "rating": 4.7,
+          "comment": "Dr. Cooper is an excellent endocrinologist. He's thorough, knowledgeable, and has helped me manage my diabetes effectively."
+        },
+        {
+          "rating": 4.6,
+          "comment": "I've had a positive experience with Dr. Cooper. He's attentive and provides personalized care for my hormonal issues."
+        }
+      ],
+      "suggested_doctors": [
+        {
+          "id": 30,
+          "name": "Dr. Natalie Scott",
+          "specialty": "Endocrinologist",
+          "experience": "8 years",
+          "availability": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "hours": "10:00 AM - 6:00 PM",
+            "location": "ABC Endocrinology Clinic, 456 Elm Street, City, State"
+          }
+        },
+        {
+          "id": 31,
+          "name": "Dr. Jacob Martinez",
+          "specialty": "Endocrinologist",
+          "experience": "6 years",
+          "availability": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "hours": "8:00 AM - 4:00 PM",
+            "location": "QRS Endocrinology Clinic, 789 Oak Street, City, State"
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Dr. Emma White",
+      "specialty": "Pulmonologist",
+      "experience": [
+        {
+          "position": "Pulmonologist",
+          "hospital": "City Pulmonology Clinic",
+          "start_year": 2022,
+          "end_year": null
+        },
+        {
+          "position": "Pulmonary and Critical Care Medicine Fellow",
+          "hospital": "Cleveland Clinic",
+          "start_year": 2019,
+          "end_year": 2022
+        }
+      ],
+      "education": [
+        {
+          "degree": "MD",
+          "university": "Cleveland Clinic Lerner College of Medicine",
+          "year": "2019"
+        },
+        {
+          "degree": "Pulmonary and Critical Care Medicine Fellowship",
+          "institution": "Cleveland Clinic",
+          "year": "2022"
+        }
+      ],
+      "certifications": [
+        "American Board of Internal Medicine - Pulmonary Disease",
+        "Basic Life Support (BLS)"
+      ],
+      "availability": {
+        "days": ["Monday", "Wednesday", "Friday"],
+        "hours": "9:00 AM - 5:00 PM",
+        "location": "XYZ Pulmonology Clinic, 123 Main Street, City, State"
+      },
+      "reviews": [
+        {
+          "rating": 4.8,
+          "comment": "Dr. White is an outstanding pulmonologist. She's caring, knowledgeable, and has greatly helped me manage my respiratory condition."
+        },
+        {
+          "rating": 4.7,
+          "comment": "I've been seeing Dr. White for my asthma treatment, and she's been wonderful. Her expertise has made a significant difference in my life."
+        }
+      ],
+      "suggested_doctors": [
+        {
+          "id": 32,
+          "name": "Dr. Benjamin Johnson",
+          "specialty": "Pulmonologist",
+          "experience": "8 years",
+          "availability": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "hours": "10:00 AM - 6:00 PM",
+            "location": "ABC Pulmonology Clinic, 456 Elm Street, City, State"
+          }
+        },
+        {
+          "id": 33,
+          "name": "Dr. Samantha Taylor",
+          "specialty": "Pulmonologist",
+          "experience": "6 years",
+          "availability": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "hours": "8:00 AM - 4:00 PM",
+            "location": "QRS Pulmonology Clinic, 789 Oak Street, City, State"
+          }
+        }
+      ]
+    }
+  ]
+}

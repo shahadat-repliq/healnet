@@ -1,0 +1,64 @@
+{
+  "specialties": [
+    {
+      "id": 1,
+      "name": "All"
+    },
+    {
+      "id": 2,
+      "name": "Cardiologist"
+    },
+    {
+      "id": 3,
+      "name": "Dermatologist"
+    },
+    {
+      "id": 4,
+      "name": "Oncologist"
+    },
+    {
+      "id": 5,
+      "name": "Orthopedic Surgeon"
+    },
+    {
+      "id": 6,
+      "name": "Pediatrician"
+    },
+    {
+      "id": 7,
+      "name": "Obstetrician/Gynecologist"
+    },
+    {
+      "id": 8,
+      "name": "Psychiatrist"
+    },
+    {
+      "id": 8,
+      "name": "Urologist"
+    },
+    {
+      "id": 10,
+      "name": "Ophthalmologist"
+    },
+    {
+      "id": 11,
+      "name": "Allergist/Immunologist"
+    },
+    {
+      "id": 12,
+      "name": "Rheumatologist"
+    },
+    {
+      "id": 13,
+      "name": "Endocrinologist"
+    },
+    {
+      "id": 14,
+      "name": "Pulmonologist"
+    },
+    {
+      "id": 15,
+      "name": "Neurologist"
+    }
+  ]
+}
