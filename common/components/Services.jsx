@@ -32,8 +32,8 @@ const Services = () => {
     return (
         <div className='w-full flex flex-col p-4 gap-4'>
             <span className='text-zinc-800 text-5xl py-4 md:text-7xl'>Services we provide</span>
-
-            <div className='w-full min-h-screen h-full grid grid-cols-1 sm:grid-cols-2 gap-4 '>
+            <div
+                className='w-full min-h-screen h-full grid grid-cols-1 sm:grid-cols-2 gap-2 '>
                 {services.map((service) => (<ServiceCard key={service.name} props={service}/>))}
             </div>
         </div>
