@@ -12,15 +12,17 @@ const Card = () => {
                 height={320}
                 alt='doctors'/>
             <div className='w-full flex justify-between items-center'>
-                <span className='text-[28px]'>John doe</span>
-                <span className='text-primary-color text-xl'>Cardiology</span>
+                <span className=' text-xl md:text-[28px] text-chip'>John doe</span>
+                <span className='text-primary-color text-md md:text-xl'>Cardiology</span>
             </div>
-            <span className='w-full overflow-hidden text-sm text-justify text-primary-color h-20'>Stay protected with our comprehensive vaccination services</span>
+            <span className='w-full overflow-hidden text-sm text-justify text-chip h-15 mb-4'>Lorem
+                ipsum dolor sit amet consectetur. Dictum sit mi nibh et augue eu justo hac
+                sollicitudin</span>
             <div
-                className='w-full flex justify-between items-center bg-[#C9ECDE] p-2  rounded-lg hover:bg-emerald-500/20'>
-                <span className='text-primary-color'>More Details</span>
+                className='w-full flex justify-between items-center bg-[#016B42] p-2  rounded-lg hover:bg-[#016B42]/90'>
+                <span className='text-white underline font-light'>More Details</span>
                 <Image
-                    src={'/assets/icons/External Link.png'}
+                    src={'/assets/icons/External Link White.png'}
                     width={30}
                     height={30}
                     alt='link'/>

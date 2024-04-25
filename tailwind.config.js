@@ -25,7 +25,9 @@ module.exports = {
         'review': '#EEF3F1',
         'service': '#E7F2EE',
         'form': '#F4F8F7',
-        'contact-input': '#DFF0EA'
+        'contact-input': '#DFF0EA',
+        'silver': '#474747',
+        'detail': '#E0EDE9'
       }
     },
   },

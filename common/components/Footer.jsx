@@ -18,7 +18,7 @@ const Footer = () => {
                     <span className='text-2xl'>Contact</span>
                     {
                         contact.map(
-                            (el) => (<span className='text-[10px] sm:text-xs' key={el}>{el}</span>)
+                            (el) => (<span className='text-[10px] sm:text-xs cursor-pointer' key={el}>{el}</span>)
                         )
                     }
                 </div>
@@ -26,7 +26,7 @@ const Footer = () => {
                     <span className='text-2xl'>Link</span>
                     {
                         link.map(
-                            (el) => (<span className='text-[10px] sm:text-xs' key={el}>{el}</span>)
+                            (el) => (<span className='text-[10px] sm:text-xs cursor-pointer' key={el}>{el}</span>)
                         )
                     }
                 </div>
@@ -34,7 +34,7 @@ const Footer = () => {
                     <span className='text-2xl'>Navigate</span>
                     {
                         navigate.map(
-                            (el) => (<span className='text-[10px] sm:text-xs' key={el}>{el}</span>)
+                            (el) => (<span className='text-[10px] sm:text-xs cursor-pointer' key={el}>{el}</span>)
                         )
                     }
                 </div>
@@ -42,7 +42,7 @@ const Footer = () => {
                     <span className='text-2xl'>Login</span>
                     {
                         login.map(
-                            (el) => (<span className='text-[10px] sm:text-xs' key={el}>{el}</span>)
+                            (el) => (<span className='text-[10px] sm:text-xs cursor-pointer' key={el}>{el}</span>)
                         )
                     }
                 </div>

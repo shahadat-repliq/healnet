@@ -1,6 +1,21 @@
+'use client'
+import {contactFormSchema} from '@/schema/form'
+import {useFormik} from 'formik'
 import React from 'react'
+import toast, {Toaster} from 'react-hot-toast'
 
 const Contact = () => {
+    const {values, handleChange, handleSubmit, errors} = useFormik({
+        initialValues: {
+            name: '',
+            email: '',
+            phone: '',
+            message: ''
+        },
+        validationSchema: contactFormSchema,
+        onSubmit: () => toast.success("Message sent successfully")
+
+    })
     return (
         <div className='w-full flex items-center justify-center flex-col'>
             <div className='w-full flex items-center justify-center flex-col mb-4 gap-2'>
@@ -13,46 +28,56 @@ const Contact = () => {
 
             <div
                 className='w-full flex flex-col items-center justify-center bg-gradient-to-r from-service/25 via-[#AFF0D6]/50 to-service/25 p-4'>
-                <div className=' bg-form max-w-md w-full p-4 rounded-xl gap-4 flex flex-col'>
+                <form
+                    onSubmit={handleSubmit}
+                    className=' bg-form max-w-md w-full p-4 rounded-xl gap-4 flex flex-col'>
                     <div className='w-full flex flex-col gap-2'>
                         <label htmlFor="name" className='text-2xl text-primary-color'>Name</label>
                         <input
                             className='text-primary-color placeholder-primary-color p-4 bg-contact-input rounded-lg border-[1px] border-primary-color/25 focus:outline-primary-color/50'
                             type="text"
                             name='name'
-                            placeholder='Enter your name'/>
-                        <span className='text-sm text-[#FF9B9B]'>Please enter your name</span>
+                            value={values.name}
+                            onChange={handleChange}
+                            placeholder='Enter your name'/> {errors.name && (<p className="text-red-600 text-sm">{errors.name}</p>)}
                     </div>
                     <div className='w-full flex flex-col gap-2'>
                         <label htmlFor="name" className='text-2xl text-primary-color'>Email</label>
                         <input
                             className='text-primary-color placeholder-primary-color p-4 bg-contact-input rounded-lg border-[1px] border-primary-color/25 focus:outline-primary-color/50'
-                            type="text"
-                            name='name'
-                            placeholder='Enter your email'/>
+                            type="email"
+                            name='email'
+                            value={values.email}
+                            onChange={handleChange}
+                            placeholder='Enter your email'/> {errors.email && (<p className="text-red-600 text-sm">{errors.email}</p>)}
 
                     </div>
                     <div className='w-full flex flex-col gap-2'>
                         <label htmlFor="name" className='text-2xl text-primary-color'>Phone</label>
                         <input
                             className='text-primary-color placeholder-primary-color p-4 bg-contact-input rounded-lg border-[1px] border-primary-color/25 focus:outline-primary-color/50'
-                            type="text"
-                            name='name'
-                            placeholder='Enter your phone'/>
-
+                            type="tel"
+                            name='phone'
+                            value={values.phone}
+                            onChange={handleChange}
+                            placeholder='Enter your phone'/> {errors.phone && (<p className="text-red-600 text-sm">{errors.phone}</p>)}
                     </div>
                     <div className='w-full flex flex-col gap-2'>
                         <label htmlFor="name" className='text-2xl text-primary-color'>Message</label>
                         <textarea
                             className='text-primary-color placeholder-primary-color p-4 resize-none bg-contact-input rounded-lg border-[1px] border-primary-color/25 focus:outline-primary-color/50'
                             type="text"
-                            name='name'
-                            placeholder='Enter your message'/>
-
+                            name='message'
+                            value={values.message}
+                            onChange={handleChange}
+                            placeholder='Enter your message'/> {errors.message && (<p className="text-red-600 text-sm">{errors.message}</p>)}
                     </div>
-                    <button className='bg-[#274539] text-white text-2xl px-4 py-2 rounded-2xl'>Submit</button>
-                </div>
+                    <button
+                        type='submit'
+                        className='bg-[#274539] text-white text-2xl px-4 py-2 rounded-lg'>Submit</button>
+                </form>
             </div>
+            <Toaster/>
         </div>
     )
 }
