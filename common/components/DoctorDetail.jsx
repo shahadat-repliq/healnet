@@ -22,14 +22,14 @@ const DoctorDetail = ({data, totalItems}) => {
                 <div className='w-full md:w-1/2 h-full flex flex-col gap-2 overflow-y-scroll max-h-screen'>
                     <div className='w-full flex items-center gap-2'>
                         <span className='text-4xl'>{data?.name}</span>
-                        <div className='size-10 relative rounded-full hover:bg-primary-color/20'>
+                        <button onClick={() => toast.success("Message sent. Please wait for reply")} className='size-10 relative rounded-full hover:bg-primary-color/20'>
                             <Image
                                 className='p-1'
                                 src={'/assets/icons/Chat.png'}
                                 objectFit="cover"
                                 fill
                                 alt='doctor'/>
-                        </div>
+                        </button>
 
                     </div>
 

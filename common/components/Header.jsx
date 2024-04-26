@@ -6,7 +6,7 @@ import React, {useState} from 'react';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(true)
-    const pages = ['Category', 'Consultant', 'Contact']
+    const pages = ['Category', 'Contact']
     return (
         <div
             className='w-full h-20 flex rounded-2xl bg-[#adadad]/10 p-4 gap-1 items-center justify-between sm:'>
