@@ -4,6 +4,7 @@ import {useFormik} from "formik"
 import toast, {Toaster} from 'react-hot-toast'
 import {registerFormSchema} from '@/schema/form'
 import {useRouter} from 'next/navigation'
+import Link from 'next/link'
 
 const Register = () => {
     const router = useRouter()
@@ -86,6 +87,7 @@ const Register = () => {
                         )
                     }
                 </div>
+                <Link href={'/signin'} className='w-full underline text-primary-color justify-end flex items-center text-sm'>Already have an account? Sign in</Link>
                 <button
                     type="submit"
                     className="bg-[#274539] text-white text-xl px-4 py-2 rounded-lg mt-2">

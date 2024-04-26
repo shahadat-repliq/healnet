@@ -4,6 +4,7 @@ import {useFormik} from "formik"
 import toast, {Toaster} from 'react-hot-toast'
 import {loginFormSchema} from '@/schema/form'
 import {useRouter} from 'next/navigation'
+import Link from 'next/link'
 
 const SignIn = () => {
     const router = useRouter()
@@ -51,6 +52,7 @@ const SignIn = () => {
                         placeholder="Enter your password"/> {errors.password && (<p className="text-red-600 text-sm">{errors.password}</p>)}
                 </div>
 
+                <Link href={'/register'} className='w-full underline text-primary-color justify-end flex items-center text-sm'>Don&apos;t have an account? Register now</Link>
                 <button
                     type="submit"
                     className="bg-[#274539] text-white text-xl px-4 py-2 rounded-lg mt-2">
