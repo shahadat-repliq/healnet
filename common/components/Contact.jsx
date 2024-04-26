@@ -17,7 +17,7 @@ const Contact = () => {
 
     })
     return (
-        <div className='w-full flex items-center justify-center flex-col'>
+        <div id='contact' className='w-full flex items-center justify-center flex-col'>
             <div className='w-full flex items-center justify-center flex-col mb-4 gap-2'>
                 <span className='text-5xl md:text-7xl'>Contact us</span>
                 <span className='text-primary-color text-sm md:text-lg text-center'>

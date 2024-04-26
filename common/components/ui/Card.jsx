@@ -19,7 +19,7 @@ const Card = ({data, total}) => {
             <span className='w-full overflow-hidden text-xs text-justify text-chip max-h-full h-full mb-4'>Lorem
                 ipsum dolor sit amet consectetur. Dictum sit mi nibh et augue eu justo hac
                 sollicitudin</span>
-            <Link href={`/doctor/${(data?.id)%total}`} className='w-full'>
+            <Link href={`/doctor/${data?.id > total ? total : data.id}`} className='w-full'>
             <div
                 className='peer w-full flex justify-between items-center bg-[#016B42] p-2  rounded-lg hover:bg-[#016B42]/90'>
                 <span className='text-white hover:underline font-light text-sm md: text-md'>More Details</span>
