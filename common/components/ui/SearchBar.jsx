@@ -1,12 +1,14 @@
 import Image from 'next/image';
 import React from 'react';
 
-const SearchBar = () => {
+const SearchBar = ({searchKey, handleSearch}) => {
     return (
         <div className='relative w-full flex items-center'>
             <input
                 className='placeholder-primary-color/90 text-primary-color w-full p-[14px] pr-12 outline-none rounded-2xl bg-[#55BE96]/10'
                 type="text"
+                value={searchKey}
+                onChange={handleSearch}
                 placeholder='Search by name'/>
             <Image
                 className='absolute right-4 top-[4.5] '
