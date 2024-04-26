@@ -4,9 +4,9 @@ import React from 'react'
 import Card from './ui/Card'
 import CommentCard from './ui/CommentCard'
 import Link from 'next/link'
+import toast, { Toaster } from 'react-hot-toast'
 
 const DoctorDetail = ({data, totalItems}) => {
-    console.log(data)
     return (
         <div className='w-full flex flex-col gap-4'>
             <div
@@ -77,8 +77,8 @@ const DoctorDetail = ({data, totalItems}) => {
                     </div>
 
                     <div className='w-full flex gap-2'>
-                        <button className='bg-[#226149] px-4 py-2 text-white rounded-lg'>Book appointment</button>
-                        <button className='border-[#3ECF97] px-4 py-2 border-[1px] rounded-lg'>Upload Photo</button>
+                        <button onClick={() => toast.success("Appointment booked successfully")} className='bg-[#226149] px-4 py-2 text-white rounded-lg'>Book appointment</button>
+                        <button onClick={() => toast.success("Uploaded photos")} className='border-[#3ECF97] px-4 py-2 border-[1px] rounded-lg'>Upload Photo</button>
                     </div>
                 </div>
             </div>
@@ -106,6 +106,7 @@ const DoctorDetail = ({data, totalItems}) => {
                     ))}
                 </div>
             </div>
+            <Toaster/>
         </div>
     )
 }

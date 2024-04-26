@@ -86,10 +86,10 @@ const DoctorList = () => {
     }
 
     return (
-        <div className='w-full min-h-full flex flex-col p-4 gap-4'>
+        <div id='category' className='w-full min-h-full flex flex-col p-4 gap-4'>
             <span className='text-zinc-800 py-4 text-5xl md:text-7xl'>Doctors</span>
 
-            <div className='w-full flex flex-col md:flex-row gap-2'>
+            <div  className='w-full flex flex-col md:flex-row gap-2'>
                 <Select
                     className='w-full'
                     onChange={handleSelect}

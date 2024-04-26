@@ -43,3 +43,7 @@ body {
   background-color: #017A4B;
 
 }
+
+html {
+  scroll-behavior: smooth;
+}

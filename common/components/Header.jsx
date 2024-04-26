@@ -18,7 +18,7 @@ const Header = () => {
             <div
                 className=' hidden sm:flex w-full  items-center gap-4 justify-end text-primary-color text-sm md:text-base'>
                 <div className='flex gap-4'>
-                    {pages.map(el => (<span className=' cursor-pointer' key={el}>{el}</span>))}
+                    {pages.map(el => (<Link key={el} href={`#${el.toLowerCase()}`}><span id={el} className='cursor-pointer' key={el}>{el}</span></Link>))}
                 </div>
                 <div className='flex gap-2'>
                     <Link href={'/signin'}>
