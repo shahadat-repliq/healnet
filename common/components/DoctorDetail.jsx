@@ -1,11 +1,12 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import ReviewCard from './ui/ReviewCard'
 import Card from './ui/Card'
 import CommentCard from './ui/CommentCard'
+import Link from 'next/link'
 
-const DoctorDetail = () => {
+const DoctorDetail = ({data, totalItems}) => {
+    console.log(data)
     return (
         <div className='w-full flex flex-col gap-4'>
             <div
@@ -20,7 +21,7 @@ const DoctorDetail = () => {
                 </div>
                 <div className='w-full md:w-1/2 h-full flex flex-col gap-2 overflow-y-scroll max-h-screen'>
                     <div className='w-full flex items-center gap-2'>
-                        <span className='text-5xl'>John Doe</span>
+                        <span className='text-4xl'>{data?.name}</span>
                         <div className='size-10 relative rounded-full hover:bg-primary-color/20'>
                             <Image
                                 className='p-1'
@@ -32,52 +33,47 @@ const DoctorDetail = () => {
 
                     </div>
 
-                    <span className='px-4 py-2 bg-[#E0EDE9] text-primary-color w-fit rounded-lg'>Cardiology</span>
+                    <span className='px-4 py-2 bg-[#E0EDE9] text-primary-color w-fit rounded-lg'>{data?.specialty}</span>
 
                     <div className='w-full flex flex-col gap-2'>
                         <span className='text-primary-color text-2xl'>Education</span>
-                        <div className='w-full flex flex-col gap-2 p-2 rounded-2xl bg-detail'>
-                            <span className='text-teal-600 capitalize'>Doctor of MD</span>
-                            <span className='text-[#44A881] capitalize'>medical school</span>
-                            <span className='text-[#44A881] capitalize'>2001</span>
+                        {data?.education?.map((el) => (
+                        <div key={el} className='w-full flex flex-col gap-2 p-2 rounded-2xl bg-detail'>
+                            <span className='text-teal-600 capitalize'>{el?.degree}</span>
+                            <span className='text-[#44A881] capitalize'>{el?.institution || el?.university}</span>
+                            <span className='text-[#44A881] capitalize'>{el?.year}</span>
                         </div>
-                        <div className='w-full flex flex-col gap-2 p-2 rounded-2xl bg-detail'>
-                            <span className='text-teal-600 capitalize'>Doctor of MD</span>
-                            <span className='text-[#44A881] capitalize'>medical school</span>
-                            <span className='text-[#44A881] capitalize'>2001</span>
-                        </div>
-                        <div className='w-full flex flex-col gap-2 p-2 rounded-2xl bg-detail'>
-                            <span className='text-teal-600 capitalize'>Doctor of MD</span>
-                            <span className='text-[#44A881] capitalize'>medical school</span>
-                            <span className='text-[#44A881] capitalize'>2001</span>
-                        </div>
-                        <div className='w-full flex flex-col gap-2 p-2 rounded-2xl bg-detail'>
-                            <span className='text-teal-600 capitalize'>Doctor of MD</span>
-                            <span className='text-[#44A881] capitalize'>medical school</span>
-                            <span className='text-[#44A881] capitalize'>2001</span>
-                        </div>
+                        ))}
+                        
                     </div>
 
                     <div className='w-full flex flex-col gap-2'>
                         <span className='text-primary-color text-2xl'>Experience</span>
-                        <div className='w-full flex justify-between gap-2 p-2 rounded-2xl bg-detail'>
+                    {data?.experience?.map((el) => (
+                        <div key={el} className='w-full flex justify-between gap-2 p-2 rounded-2xl bg-detail'>
                             <div className='flex flex-col gap-2'>
-                                <span className='text-teal-600 capitalize'>Doctor of MD</span>
-                                <span className='text-[#44A881] capitalize'>medical school</span>
+                                <span className='text-teal-600 capitalize'>{el?.position}</span>
+                                <span className='text-[#44A881] capitalize'>{el?.hospital}</span>
                             </div>
-                            <div className='text-[#44A881] text-sm'>
-                                <span>2001-2005</span>
+                            <div className='text-[#44A881] text-sm flex gap-2'>
+                            
+                               
                             </div>
                         </div>
+                        ))}
 
                     </div>
 
                     <div className='w-full flex flex-col gap-2'>
                         <span className='text-primary-color text-2xl'>Certifications</span>
-                        <div className='w-full flex  items-center gap-2 p-2 rounded-2xl bg-detail'>
+                        {data?.certifications?.map((el) => (
+
+                        
+                        <div key={el} className='w-full flex  items-center gap-2 p-2 rounded-2xl bg-detail'>
                             <span className='text-teal-600 capitalize'>&#8226;</span>
-                            <span className='text-[#44A881] capitalize'>American Board of Internal Medicine (ABIM) - Cardiology</span>
+                            <span className='text-[#44A881] capitalize'>{el}</span>
                         </div>
+                        ))}
                     </div>
 
                     <div className='w-full flex gap-2'>
@@ -92,19 +88,22 @@ const DoctorDetail = () => {
             <div className='w-full gap-4 flex-col flex'>
                 <span className='text-4xl'>Reviews</span>
                 <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-2'>
-                    <CommentCard/>
-                    <CommentCard/>
-                    <CommentCard/>
-                    <CommentCard/>
+                    {
+                        data?.reviews?.map((el) => (
+                            <CommentCard key={el} data={el}/>
+
+                        ))
+                    }
                 </div>
             </div>
             <div className='w-full gap-4 flex-col flex'>
                 <span className='text-4xl'>Suggested Doctors</span>
                 <div className='w-full flex flex-col lg:flex-row gap-2'>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
+                    {data?.suggested_doctors?.map((el) => (
+                        <Link className='w-full flex flex-col lg:flex-row gap-2' key={el.id} href={`/doctor/${(el.id)%16}`}>
+                            <Card key={el.id} data={el} total={totalItems}/>
+                        </Link>
+                    ))}
                 </div>
             </div>
         </div>

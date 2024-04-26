@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 
-const CommentCard = () => {
+const CommentCard = ({data}) => {
+    console.log(data)
     return (
         <div
             className='w-full flex flex-col gap-4 p-4 h-[200px] bg-[#E0EBE6] border-[1px] border-[#57D496]/35 rounded-2xl'>
@@ -18,11 +19,11 @@ const CommentCard = () => {
                     <span className=' text-primary-color text-xs'>20-08-2024</span>
 
                 </div>
+                <span className='text-white h-fit p-2 bg-chip/75 rounded-lg text-center'>{data?.rating}</span>
             </div>
             <span
                 className='text-[#00975D] w-full overflow-hidden text-sm mb-2'>
-                Stay protected with our comprehensive vaccination services. From routine immunizations to specialized vaccines, safeguard your health with ease.
-
+                {data?.comment}
             </span>
         </div>
     )
