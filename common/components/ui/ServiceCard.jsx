@@ -8,7 +8,7 @@ const ServiceCard = ({props}) => {
                 ? 'row-span-1 sm:row-span-2'
                 : 'row-span-1'} flex items-center justify-center gap-2 flex-col p-4 rounded-lg text-primary-color border-[1px] border-[#55BE96]/30`}>
             <Image width={50} height={50} src={props.icon} alt={props.name}/>
-            <span className=''>{props.name}</span>
+            <span className='text-md md:text-xl'>{props.name}</span>
             <span className=' text-center text-sm'>{props.description}</span>
         </div>
     );

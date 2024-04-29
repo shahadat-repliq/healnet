@@ -22,6 +22,7 @@ const DoctorList = () => {
         {queryKey: ['/doctors'], queryFn: getDoctors}
     )
 
+
     const categories = useQuery(
         {queryKey: ['/category'], queryFn: getCategories, enabled: categoryKey}
     )
