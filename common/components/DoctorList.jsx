@@ -9,8 +9,8 @@ import {useQuery} from '@tanstack/react-query';
 import {getCategories, getDoctors} from '@/controller/controller';
 import Loader from './ui/Loader';
 import {getPaginationProps} from '@/utils/getPaginationProps';
-import {getCategoryList} from '@/utils/getCategoryList';
 import useDebounce from '@/hooks/useDebounce';
+import { getCategoryList } from '@/utils/convertList';
 
 const DoctorList = () => {
     const [currentPage, setCurrentPage] = useState(1)

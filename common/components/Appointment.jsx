@@ -1,45 +1,72 @@
 'use client'
 import {appointmentSchema} from '@/schema/form'
 import {useFormik} from 'formik'
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import toast, {Toaster} from 'react-hot-toast'
 import {colourStyles, DropdownIndicator} from './styles/categoryStyle';
 import Select from "react-select";
 import {useQuery} from '@tanstack/react-query';
-
-import { getDoctors } from '@/controller/controller'
-import { getDoctorList } from '@/utils/getDoctorsList'
-import { getTime } from '@/utils/getTimeList'
+import {getDoctors} from '@/controller/controller'
 import Loader from './ui/Loader'
 import Link from 'next/link'
+import {getDoctorList, getTime} from '@/utils/convertList'
 
 const Appointment = () => {
 
     const [doctorKey, setDoctorKey] = useState(false)
 
-    const {data, isLoading, isError} = useQuery(
-        {queryKey: ['/doctors'], queryFn: getDoctors, enabled: !!doctorKey}
-    )
-    const {values, handleChange, handleSubmit, errors , setFieldValue, touched, isSubmitting} = useFormik({
+    const {data, isLoading, isError} = useQuery({
+        queryKey: ['/doctors'],
+        queryFn: getDoctors,
+        enabled: !!doctorKey
+    })
+    const {
+        values,
+        handleChange,
+        handleSubmit,
+        errors,
+        setFieldValue,
+        touched,
+        isSubmitting
+    } = useFormik({
         initialValues: {
             phone: '',
             doctor: '',
             time: ''
         },
         validationSchema: appointmentSchema,
-        onSubmit: () => toast.success("Message sent successfully")
-
+        onSubmit: (values, {resetForm}) => {
+            toast.success("Appointment booked successfully")
+            setFieldValue('doctor', '');
+            setFieldValue('time', '');
+            resetForm()
+        }
 
     })
-    
-    console.log(errors)
-    const convertedDoctors = getDoctorList(data?.doctors)
-    const filteredDoctor = data?.doctors?.find((el) => el?.name?.toLowerCase() === values?.doctor?.toLowerCase())
-    
-    const convertedTimeList = getTime(filteredDoctor?.availability)
+
+    const convertedDoctors = getDoctorList(
+        data
+            ?.doctors
+    )
+    const filteredDoctor = data
+        ?.doctors
+                ?.find(
+                    (el) => el
+                        ?.name
+                            ?.toLowerCase() === values
+                                ?.doctor
+                                    ?.toLowerCase()
+                )
+
+    const convertedTimeList = getTime(
+        filteredDoctor
+            ?.availability
+    )
 
     const selectedValue = (options, value) => {
-        return options ? options?.find( el => el.value === value ) : ""
+        return options
+            ? options.find(el => el.value === value) || null
+            : null
     }
     return (
         <div className='w-full flex items-center justify-center flex-col pt-4'>
@@ -89,9 +116,7 @@ const Appointment = () => {
                             components={{
                                 IndicatorSeparator: () => null,
                                 DropdownIndicator
-                            }}
-                        />
-                        {errors.doctor && (<p className="text-red-600 text-sm">{errors.doctor}</p>)}
+                            }}/> {errors.doctor && (<p className="text-red-600 text-sm">{errors.doctor}</p>)}
                     </div>
 
                     <div className='w-full flex flex-col gap-2'>
@@ -110,9 +135,11 @@ const Appointment = () => {
                             components={{
                                 IndicatorSeparator: () => null,
                                 DropdownIndicator
-                            }}
-                        />
-                        {errors.time && touched.time ? (<p className="text-red-600 text-sm">{errors.time}</p>) : null}
+                            }}/> {
+                            errors.time && touched.time
+                                ? (<p className="text-red-600 text-sm">{errors.time}</p>)
+                                : null
+                        }
                     </div>
 
                     <button

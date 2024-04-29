@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, {useState} from 'react';
+import Dropdown from './ui/Dropdown';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(true)
@@ -18,7 +19,13 @@ const Header = () => {
             <div
                 className=' hidden sm:flex w-full  items-center gap-4 justify-end text-primary-color text-sm md:text-base'>
                 <div className='flex gap-4'>
-                    {pages.map(el => (<Link key={el} href={`#${el.toLowerCase()}`}><span id={el} className='cursor-pointer' key={el}>{el}</span></Link>))}
+                    {
+                        pages.map(el => (
+                            <Link key={el} href={`#${el.toLowerCase()}`}>
+                                <span id={el} className='cursor-pointer' key={el}>{el}</span>
+                            </Link>
+                        ))
+                    }
                 </div>
                 <div className='flex gap-2'>
                     <Link href={'/signin'}>
@@ -33,9 +40,19 @@ const Header = () => {
             <div className='relative flex  justify-end sm:hidden'>
                 {
                     isOpen
-                        ? <button onClick={() => setIsOpen(!isOpen)}><Image src={'/assets/icons/menu.png'} width={30} height={30} alt="logo"/></button>
+                        ? (
+                            <div >
+                                <button onClick={() => setIsOpen(!isOpen)}><Image src={'/assets/icons/menu.png'} width={30} height={30} alt="logo"/></button>
+                                
+                            </div>
+                        )
 
-                        : <button onClick={() => setIsOpen(!isOpen)}><Image src={'/assets/icons/Close.png'} width={30} height={30} alt="logo"/></button>
+                        : (
+                            <div className='relative'>
+                                <button onClick={() => setIsOpen(!isOpen)}><Image src={'/assets/icons/Close.png'} width={30} height={30} alt="logo"/></button>
+                            <Dropdown/>
+                            </div>
+                        )
                 }
 
             </div>
