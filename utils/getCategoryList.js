@@ -5,3 +5,4 @@ export function getCategoryList(specialties) {
         label: name
     }));
 }
+

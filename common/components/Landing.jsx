@@ -12,14 +12,17 @@ const Landing = () => {
                     connecting you to trusted healthcare providers. Book appointments, track your
                     wellness journey, and take control of your health—all in one place</span>
 
-                <div className='w-full flex gap-4 items-center justify-center'>
+                <div className='w-full flex gap-4 items-center justify-center text-xs md:text-lg'>
                     <Link href={'/doctor'}>
                         <button
                             className='text-white rounded-lg px-4 md:px-6 py-2 md:py-3 bg-gradient-to-b from-[#474747] via-[#212121] to-[#212121]'>Take a tour</button>
                     </Link>
+                    <Link href={'/appointment'}>
                     <button
                         className='rounded-lg px-4 md:px-6 py-2 md:py-3 bg-gradient-to-b from-primary-color to-[#004C2F] border-primary-color/50 border-[1px] text-white'>Book a date</button>
+                    </Link>
                 </div>
+
             </div>
         </div>
     )
