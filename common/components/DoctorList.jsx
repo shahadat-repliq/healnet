@@ -1,5 +1,5 @@
 'use client'
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import Card from './ui/Card'
 import SearchBar from './ui/SearchBar'
 import Select from "react-select";
@@ -11,6 +11,7 @@ import Loader from './ui/Loader';
 import {getPaginationProps} from '@/utils/getPaginationProps';
 import useDebounce from '@/hooks/useDebounce';
 import { getCategoryList } from '@/utils/convertList';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 const DoctorList = () => {
     const [currentPage, setCurrentPage] = useState(1)
@@ -21,7 +22,9 @@ const DoctorList = () => {
     const {data, isLoading, isError} = useQuery(
         {queryKey: ['/doctors'], queryFn: getDoctors}
     )
-
+    const queryParams = new URLSearchParams(window.location.search)
+    const searchParams = useSearchParams()
+    const selectedCategory = searchParams.get('category')
 
     const categories = useQuery(
         {queryKey: ['/category'], queryFn: getCategories, enabled: categoryKey}
@@ -45,6 +48,15 @@ const DoctorList = () => {
                                 ?.toLowerCase()
                     )))
     }
+
+    if(selectedCategory){
+        filteredList = data
+            ?.doctors
+                    ?.filter((el) => (el.specialty.toLowerCase().includes(
+                        selectedCategory?.toLowerCase()
+                    )))
+    }
+
     if (category.value === "All") {
         filteredList = data
             ?.doctors
@@ -78,13 +90,15 @@ const DoctorList = () => {
 
     const handleSelect = (selectedOption) => {
         setCategory(selectedOption)
-
+        queryParams.set('category', selectedOption.value)
+        window.history.pushState({}, '', `?${queryParams}`);
     }
 
     const handleSearch = (e) => {
         e.preventDefault()
         setSearchKey(e.target.value)
     }
+
 
     return (
         <div id='category' className='w-full min-h-full flex flex-col p-4 gap-4'>
